@@ -1,0 +1,92 @@
+.main-page
+  padding: 10px 0 80px 0
+  overflow: hidden
+  &__photo
+    position relative
+    left: calc(50% - 182px)
+    +above($breakpoints.xs)
+      left: auto
+    img
+      width 314px
+      height: auto
+      margin: 0 auto
+  &__inner
+    position relative
+    z-index 1
+    padding: 0 0 94px 0;
+  &__decor
+    position: absolute
+    z-index -1
+    bottom: -134px;
+    left: -58px;
+    img
+      width 200px
+      height: auto
+  &__decor-2
+    position: absolute
+    z-index -1
+    z-index -1
+    bottom: -134px;
+    right: -58px;
+    img
+      width 200px
+      height: auto
+  &__decor-3
+    position: absolute
+    z-index -1
+    bottom: -132px
+    left: 0
+    right 0
+    img
+      margin: 0 auto
+      width 200px
+      height: auto
+  &__container
+    position relative
+    z-index 1
+    color: darkblue
+    margin: 0 0 18px 0
+    &:before
+      content: ""
+      position: absolute
+      z-index -1
+      top: -20px
+      left: -20px
+      right -20px
+      bottom: -20px
+      background-color: #ffbaba;
+      filter: blur(33px);
+
+  &__title
+    font-size: 25px
+    line-height: 120%
+    margin: 0 0 20px 0
+    text-align: center
+    font-family: "Gilroy-Regular"
+    font-weight: bold
+    text-shadow: #fc0 1px 0 10px;
+
+  &__description
+    text-align: center
+    font-size: 16px
+    line-height: 120%
+    font-family: "Montserrat-Medium"
+    span
+      font-size: 12px
+      display block
+      color: grey
+      font-family: "Gilroy-Regular"
+      text-align: right
+      margin: 20px 0 0 0
+
+  &__swiper
+    max-width: 290px
+    margin: 0 auto
+    position relative
+    z-index 22
+
+  &__swiper-slide
+    img
+      width 290px
+      height: auto
+      border-radius: 10px
